@@ -15,6 +15,4 @@
 
 /node_modules
 /yarn-error.log
-config/secrets.yml
-secrets.yml
 .byebug_history
