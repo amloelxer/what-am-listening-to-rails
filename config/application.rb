@@ -10,7 +10,7 @@ module WhatAmIListeningToRails
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.1
-    RSpotify.authenticate(Rails.application.secrets.spotify_client_id, Rails.application.secrets.spotify_client_secret)
+    RSpotify.authenticate(ENV["spotify_client_id"], ENV["spotify_client_secret"])
 
    # Now you can access playlists in detail, browse featured content and more
     # Settings in config/environments/* take precedence over those specified here.
